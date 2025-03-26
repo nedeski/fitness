@@ -1332,22 +1332,14 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
         <>
           {/* Title */}
           <h2
-            className={`absolute left-[1.6em] top-1/2 -translate-y-1/2 translate-x-[20%] transform select-none font-black transition-all ease-[cubic-bezier(0.25,0.1,0.25,1.0)] [font-size:4rem] ${
-              isMoving
-                ? 'pointer-events-none opacity-0 duration-[100ms]'
-                : 'pointer-events-auto opacity-100 duration-[500ms]'
-            } `}
+            className={`absolute left-[1.6em] top-1/2 -translate-y-1/2 transform select-none text-4xl font-black transition-all ease-[cubic-bezier(0.25,0.1,0.25,1.0)] md:text-5xl lg:text-6xl ${isMoving ? 'pointer-events-none opacity-0 duration-[100ms]' : 'pointer-events-auto opacity-100 duration-[500ms]'} `}
           >
             {activeItem.title}
           </h2>
 
           {/* Description */}
           <p
-            className={`absolute right-[1%] top-1/2 max-w-[10ch] select-none text-[1.5rem] transition-all ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${
-              isMoving
-                ? 'pointer-events-none -translate-y-1/2 translate-x-[-60%] opacity-0 duration-[100ms]'
-                : 'pointer-events-auto -translate-y-1/2 translate-x-[-90%] opacity-100 duration-[500ms]'
-            } `}
+            className={`absolute right-[5%] top-1/2 max-w-[12ch] select-none text-lg transition-all ease-[cubic-bezier(0.25,0.1,0.25,1.0)] md:text-xl lg:text-2xl ${isMoving ? 'pointer-events-none -translate-y-1/2 translate-x-[-60%] opacity-0 duration-[100ms]' : 'pointer-events-auto -translate-y-1/2 translate-x-[-90%] opacity-100 duration-[500ms]'} `}
           >
             {activeItem.description}
           </p>
@@ -1355,13 +1347,9 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
           {/* Action Button */}
           <div
             onClick={handleButtonClick}
-            className={`absolute left-1/2 z-10 grid h-[60px] w-[60px] cursor-pointer place-items-center rounded-full border-[5px] border-black bg-amber-300 transition-all ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${
-              isMoving
-                ? 'pointer-events-none bottom-[-80px] -translate-x-1/2 scale-0 opacity-0 duration-[100ms]'
-                : 'pointer-events-auto bottom-[3.8em] -translate-x-1/2 scale-100 opacity-100 duration-[500ms]'
-            } `}
+            className={`absolute left-1/2 z-10 grid h-[50px] w-[50px] cursor-pointer place-items-center rounded-full border-[4px] border-black bg-amber-300 transition-all ease-[cubic-bezier(0.25,0.1,0.25,1.0)] md:h-[60px] md:w-[60px] md:border-[5px] ${isMoving ? 'pointer-events-none bottom-[-80px] -translate-x-1/2 scale-0 opacity-0 duration-[100ms]' : 'pointer-events-auto bottom-[2.5em] -translate-x-1/2 scale-100 opacity-100 duration-[500ms] md:bottom-[3.8em]'} `}
           >
-            <p className="relative top-[2px] select-none text-[26px] text-[#060606]">
+            <p className="relative top-[1px] select-none text-[22px] text-[#060606] md:top-[2px] md:text-[26px]">
               &#x2197;
             </p>
           </div>
