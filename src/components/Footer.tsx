@@ -125,10 +125,11 @@ export function Footer() {
         <Link href="/" aria-label="Home">
           {/* <Logo className="h-8" fillOnHover /> */}
           <Image
-            src="/public/images/gym-black.png"
+            src="/images/gym-black.png"
             alt="Logo image"
             width={120}
             height={140}
+            unoptimized={true}
           />
         </Link>
         <p className="text-sm text-neutral-700">
