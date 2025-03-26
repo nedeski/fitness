@@ -1,0 +1,10 @@
+node_modules
+dist
+coverage
+.idea
+.vscode
+.next
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
