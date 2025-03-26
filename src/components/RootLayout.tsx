@@ -71,7 +71,7 @@ function Header({
           // className="flex items-center justify-center"
         >
           <Image
-            src={invert ? '/images/gym-white.png' : '/images/gym-black.png'}
+            src={invert ? '/images/gymWhite.PNG' : '/images/gymBlack.PNG'}
             alt="Logo image"
             width={150}
             height={180}
